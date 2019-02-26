@@ -17,4 +17,10 @@ public class Gerente extends Funcionario {
 		}
 		return false;
 	}
+	
+	@Override
+	public double getBonificacao() {
+		// TODO Auto-generated method stub
+		return super.getBonificacao() + super.getSalario();
+	}
 }

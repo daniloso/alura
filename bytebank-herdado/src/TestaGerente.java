@@ -16,6 +16,7 @@ public class TestaGerente {
 		boolean autenticou = g1.autentica(2222);
 		
 		System.out.println(autenticou);
+		System.out.println(g1.getBonificacao());
 		
 	}
 
