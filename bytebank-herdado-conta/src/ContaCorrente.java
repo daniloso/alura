@@ -10,4 +10,10 @@ public class ContaCorrente extends Conta{
 		// TODO Auto-generated method stub
 		return super.saca(valor+0.2);
 	}
+
+	@Override
+	public void deposita(double valor) {
+		super.setSaldo(super.getSaldo()+valor);
+		
+	}
 }

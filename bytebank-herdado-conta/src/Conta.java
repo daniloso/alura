@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
 
 	private double saldo;
 	private int agencia;
@@ -46,11 +46,11 @@ public class Conta {
 	public double getSaldo() {
 		return saldo;
 	}
-
-	public void deposita(double valor) {
-		this.saldo+=valor;
-		
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
 	}
+
+	public abstract void deposita(double valor);
 	
 	public boolean saca(double valor) {
 		if (this.saldo>=valor) {
