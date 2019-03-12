@@ -10,7 +10,7 @@ public class Fluxo {
 		System.out.println("Ini do metodo1");
 		try {
 			metodo2();
-		} catch (ArithmeticException | NullPointerException ex) {
+		} catch (ArithmeticException | NullPointerException | MinhaExcecao ex) {
 			String msg = ex.getMessage();
 			System.out.println("ArithmeticException: " + msg);
 			ex.printStackTrace();
@@ -18,7 +18,7 @@ public class Fluxo {
 		System.out.println("Fim do metodo1");
 	}
 
-	private static void metodo2() {
+	private static void metodo2() throws MinhaExcecao {
 		System.out.println("Ini do metodo2");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(i);
